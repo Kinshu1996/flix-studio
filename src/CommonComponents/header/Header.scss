@@ -1,0 +1,174 @@
+.header-section {
+  padding: 0;
+  position: relative;
+  z-index: 9;
+  .top-header {
+    background-color: #f8f8f8;
+
+    .top-header-container {
+      width: 90%;
+      margin: 0 auto;
+      height: 49px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 1rem;
+      .top-header-text {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        color: #a8a8a8;
+        &:hover {
+          color: #de6b32;
+          cursor: pointer;
+        }
+      }
+      .active {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 0em;
+
+        color: #de6b32;
+      }
+    }
+  }
+  .bottom-header {
+    height: 85px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .bottom-header-container {
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo-right-side {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        .space {
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #6e747d;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-dropdown {
+  .ant-dropdown-menu {
+    padding: 0;
+    .ant-dropdown-menu-item {
+      font-size: 14px !important;
+      font-weight: 400 !important;
+      line-height: 21px !important;
+      letter-spacing: 0em;
+      color: #261e1e !important;
+      padding: 0.8rem 1rem;
+
+      &:hover {
+        cursor: pointer;
+        color: #de6b32 !important;
+        background-color: transparent !important;
+      }
+    }
+    table {
+      th {
+        text-align: left;
+        padding: 0rem 0rem 1rem 3.7rem;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 0em;
+        color: #000000;
+      }
+      td {
+        .ant-dropdown-menu-item {
+          background-color: transparent;
+          padding-left: 4rem;
+          color: #000000 !important;
+          font-size: 15px !important;
+          font-weight: 500;
+        }
+      }
+    }
+    .teams-header {
+      background-color: #fef1ea;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      gap: 4.5rem;
+      padding: 0 4.5rem;
+      .teams-header-title {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        &:hover {
+          color: #de6b32;
+          cursor: pointer;
+        }
+      }
+      .active-teams-header-title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0em;
+        color: #de6b32;
+      }
+    }
+    .teams-bottom-section {
+      .teams-bottom-container {
+        padding: 4.5rem;
+        .ant-row {
+          .ant-col {
+            .ant-dropdown-menu-item {
+              background-color: transparent !important;
+              padding: 0;
+              .team-title {
+                font-family: Poppins;
+                font-size: 14px !important;
+                font-weight: 600 !important;
+                line-height: 21px !important;
+                letter-spacing: 0em !important;
+                text-align: left;
+                color: #261e1e !important;
+                &:hover {
+                  color: #de6b32 !important;
+                }
+              }
+            }
+            .team-text {
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 18px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: #544e47;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

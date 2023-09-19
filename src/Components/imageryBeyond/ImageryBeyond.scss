@@ -1,0 +1,63 @@
+@import "../../assets/scss/variable.scss";
+.beyond-section {
+    margin-bottom: 200px;
+  .beyond-container {
+    .top-section {
+      display: flex;
+      justify-content: center;
+      .coma {
+        font-family: Poppins;
+        font-size: 150px;
+        font-weight: 500;
+        line-height: 165px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        color: #251f17;
+        position: relative;
+        // top: -4rem;
+      }
+
+      .heading {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 52px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 4rem 0 0rem;
+      }
+      .text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #544e47;
+        padding: 1.5rem 0;
+        span {
+          color: #131313;
+        }
+      }
+    }
+    .image-container{
+        
+        table{
+            // width: 100vw;
+            // aspect-ratio: 1/1;
+            width: 100%;
+            // object-fit: fill;
+            margin: 0 auto;
+            border-spacing: 0.5rem;
+            // td{
+            //     margin: 0 auto;
+            // }
+            
+        }
+        @media  screen and (max-width: 1444px) {
+            table{
+                border-spacing: 0.2rem;
+            }   
+        }
+    }
+  }
+}

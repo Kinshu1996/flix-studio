@@ -1,0 +1,49 @@
+@import "../../assets/scss/variable.scss";
+.stop-section{
+    .stop-container{
+        width: 85%;
+        margin: 0 auto;
+        .content{
+            .items{
+                // justify-content: space-between;
+                align-items: center;
+                .item-img{
+                    position: relative;
+                    padding: 2rem 0 1rem;
+                    .img-icon{
+                        position: absolute;
+                    }
+                    .icon1, .icon3{
+                        top: 0rem;
+                    }
+                    .icon2{
+                        top: 3rem;
+                        left: 1rem;
+                    }
+
+                }
+                .heading{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.04em;
+                
+                }
+                .text{
+                    padding: .6rem 0;
+                }
+                .btn{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+font-size: 16px;
+font-weight: 500;
+line-height: 22px;
+color: $primary;
+cursor: pointer;
+                }
+            }
+        }
+    }
+}

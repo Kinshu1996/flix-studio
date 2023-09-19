@@ -1,0 +1,101 @@
+@import "../../assets/scss/variable.scss";
+.customized-section {
+  // margin-bottom: 6rem;
+  // padding-bottom: 86px;
+  .customized-container {
+    width: 85%;
+    margin: 0 auto;
+    .heading {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 57px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: $black1;
+    }
+    .customized-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .item {
+        padding-top: 2rem;
+        .img{
+            position: relative;
+            .first-img{}
+            .img-icon{
+                position: absolute;
+                top: -4rem;
+                left: -4rem;
+            }
+        }
+        .sub-heading {
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 33px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $black1;
+          padding: 0.5rem 0;
+        }
+        .sub-text {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $grey;
+          padding: 0.5rem 0;
+        }
+        .explore-btn {
+          border: 0;
+          outline: 0;
+          height: 56px;
+          border: 1.62px solid #282626;
+          width: 265px;
+          position: relative;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #282626;
+          margin: .8rem 0;
+        //   transform: 1s;
+          img {
+            position: relative;
+            right: -2rem;
+            // padding-left: 2rem;
+            transition: right 0.5s;
+          }
+          &:hover {
+            border: 0;
+            background-color: $black1;
+            color: $white;
+            transition: ease all .5s;
+            
+            img {
+              //   // filter: invert(100%) url('assets/your-SVG.svg#id-of-your-filter');
+              // filter: invert(0) sepia(0) saturate(1) hue-rotate(360deg)
+              //   brightness(1.2);
+              right: -0.5rem;
+            }
+          }
+        }
+        .explore-btn-sec{
+
+          img {
+            position: relative;
+            right: -0.3rem;
+            transition: right 0.5s;
+          }
+          &:hover {            
+            img {
+              right: -0.3rem;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

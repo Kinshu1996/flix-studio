@@ -1,0 +1,110 @@
+@import "../../assets/scss/variable.scss";
+.control-section {
+  margin-bottom: 200px;
+  background-color: $lightyello;
+  padding: 6.5rem;
+  .control-container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    .heading {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 56px;
+      letter-spacing: 0.02em;
+
+      color: $black1;
+    }
+    .text {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0em;
+      color: $lightgrey;
+      padding: 1rem 0;
+    }
+    .content {
+      position: relative;
+      .video-container {
+        position: relative;
+        margin: 2rem auto;
+        z-index: 0;
+        .dot-container{
+          height: 31.75px;
+          background-color: $white;
+          display: flex;
+          padding-left: 1rem;
+          gap: 1rem;
+          border-radius: 13px 13px 0 0 ;
+          img{
+            width: 9.52px;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+          }
+          .player-wrapper{
+            .video{
+              video{
+                // border-radius: 0 0 13px 13px !important;
+                border-radius: 3px;
+                background: #0000001A;
+              }
+            }
+          }
+        }
+      }
+      .tik-container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 1px solid #cad6f1;
+        border-radius: 8px;
+        background-color: #ffffff;
+        box-shadow: 0px 25px 50px 0px #16194f0d;
+        z-index: 1;
+        height: 67px;
+        .tik-text {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0em;
+          color: #333131;
+        }
+      }
+      .tik-container-1 {
+        width: 186px;
+        left: -3rem;
+        top: 5rem;
+      }
+      .tik-container-2 {
+        width: 112px;
+        left: -3rem;
+        bottom: 6rem;
+      }
+      .tik-container-3 {
+        width: 208px;
+        right: -3rem;
+        top: 50%;
+        bottom: 50%;
+      }
+      .tik-container-4 {
+        width: 253px;
+        right: 12rem;
+        bottom: -2rem;
+      }
+    }
+    .sub-text {
+      padding-top: 3rem;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0em;
+      color: $lightgrey;
+      span {
+        font-weight: 700;
+        color: #f26722;
+        border-bottom: 2px solid #f26722;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.chat-section {
+  margin-bottom: 200px;
+  .chat-container {
+    background: url("../../assets/images/chatBg.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1018px;
+    margin: 0 auto;
+    height: 526px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .right-side {
+        height: 367px;
+        width: 495px;
+        padding: 2rem;
+        border: 2px solid #E25E3E;
+        background-color: #FEECC0;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      .heading {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 54px;
+        letter-spacing: 0em;
+        color: #de6b32;
+      }
+      .tik-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .tik-content {
+          display: flex;
+          gap: 1rem;
+          .text {
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+            letter-spacing: 0em;
+            color: #de6b32;
+          }
+        }
+      }
+    }
+  }
+}

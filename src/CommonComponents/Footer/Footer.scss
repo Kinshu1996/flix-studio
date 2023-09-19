@@ -1,0 +1,119 @@
+@import "../../assets/scss/variable.scss";
+.footer-section {
+  background-color: #fbfbfa;
+  // padding-top: 4rem;
+  .footer-container {
+    .footer-top {
+      width: 75%;
+      margin: 0 auto;
+      .logo{
+        padding: 4rem 0;
+      }
+      .table {
+        // padding-top: 1rem;
+        table {
+          width: 100%;
+          text-align: left;
+          padding: 2rem 0;
+          th {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: #251f17;
+            padding: 0.5rem 0;
+            text-transform: capitalize;
+          }
+          td {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.36000001430511475px;
+            color: #544e47;
+            padding: 0.3rem 0;
+          }
+          .table-sec-heading {
+            th {
+              padding-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+    .footer-medium {
+      display: flex;
+      justify-content: end;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      .form {
+        label {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          font-family: 'Inter', sans-serif;
+        }
+        input {
+          width: 416px;
+          height: 50px;
+          padding: 13px 28px 13px 30px;
+          background-color: #ffffff;
+          border: 0.55px solid #cad6f1;
+          box-shadow: 0px 27.53622817993164px 55.07245635986328px 0px #16194f0d;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          font-variation-settings: "slnt" 0;
+          color: #68615b;
+          margin-right: 0.5rem;
+          margin-top: 0.5rem;
+          border-radius: 6px;
+        }
+      }
+    }
+    .footer-bottom {
+      padding: 0 3rem;
+      font-family: 'Poppins', sans-serif;
+      .text {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.36000001430511475px;
+        text-align: left;
+        color: #352c24;
+      }
+      .bottom-up {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 0;
+        .left {
+          display: flex;
+          gap: 3rem;
+          .link-text{
+            font-family: Poppins;
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: 0.36000001430511475px;
+text-align: left;
+color: #352C24;
+display: flex;
+gap: .5rem;
+border-bottom: 1.11px solid #352C24;
+cursor: pointer;
+          }
+        }
+        .right {
+          display: flex;
+          gap: 2rem;
+        }
+      }
+      .bottom-down {
+        padding-top: 1rem;
+      }
+    }
+  }
+}

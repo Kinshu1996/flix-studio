@@ -1,0 +1,39 @@
+@import "../../assets/scss/variable.scss";
+.item-section{
+    .ant-row{
+        .ant-col{
+            
+            .item{ 
+                height: 413px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                .shadow{
+                
+                    height: 209.13px;
+                    background: url("../../assets/images/rectangle4.svg");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 0 0 10px 10px;
+                    display: flex;
+                    align-items: end;
+                    padding-left: 2rem;
+                    padding-bottom: 2rem;
+                    .sub-heading{
+font-size: 23px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

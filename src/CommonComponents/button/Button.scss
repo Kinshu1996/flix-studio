@@ -1,0 +1,132 @@
+@import "../../assets/scss/variable.scss";
+.Button{
+    border: 0;
+    outline: 0;
+    height: 50.26px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    &:hover{
+        outline: none !important;
+        transition: ease all .5s;
+        background-color: $black;
+        color: $white !important;
+    }
+}
+
+.primaryBtn{
+   background-color: $primary;
+   color: $white; 
+}
+
+.secondaryBtn{
+    border: 1px solid $black;
+    color: $black;
+    background: transparent;
+}
+.buy-btn{
+    height: 42px;
+    border: none;
+    outline: none;
+    border: 2px solid #001B49;
+    color: #001B49;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0em;
+background-color: transparent;
+transition: ease all .5s;
+&:hover{
+    border: 2px solid #001B49 !important;
+    background-color: #001B49;
+    color: $white !important;
+}
+}
+
+.talkBtn{
+    border: none;
+    outline: none;
+    background-color: #30312C;
+    height: 46.24px;
+    color: #FFEDE1;
+
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+&:hover{
+    border: none !important;
+    outline: none !important;
+    background-color: $black1;
+    cursor: pointer;
+    color: #FFEDE1 !important;
+}
+
+}
+
+.callBtn{
+    border: none !important;
+    outline: none !important;
+    height: 50px;
+    background-color: #DE6B32;
+    color: #ffffff;
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+&:hover{
+    border: none !important;
+    outline: none !important;
+    background-color: #B9501D;
+    color: #ffffff !important;
+}
+}
+.bookBtn{
+    height: 58px;
+    border: 2px solid #DE6B32;
+    background-color: #FFFFFF;
+font-size: 18px;
+font-weight: 600;
+line-height: 27px;
+letter-spacing: 0em;
+color: #DE6B32;
+&:hover{
+    outline: none !important;
+    transition: ease all .5s;
+    background-color: #DE6B32 ;
+    color: #FFFFFF !important;
+    border: 2px solid #DE6B32 !important;
+    
+}
+}
+
+.formbtn {
+    width: 215.29px;
+    height: 36.37px;
+    border: 1px solid #DE6B32;
+    font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+   
+}
+.meeting-btn{
+    background-color: #DE6B32 ;
+    color: #FFFFFF !important;
+    &:hover{
+            outline: none !important;
+        color: #ffffff !important;
+    
+    }
+        }
+        .callback-btn{
+            background-color: transparent;
+    color: #DE6B32;
+    &:hover{
+        outline: none !important;
+    color: #DE6B32 !important;
+    
+    }
+        }

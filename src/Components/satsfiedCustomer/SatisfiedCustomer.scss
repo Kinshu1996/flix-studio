@@ -1,0 +1,130 @@
+// @import "~slick-carousel/slick/slick.scss";
+// @import "~slick-carousel/slick/slick-theme.scss";
+.satisfied-section{
+    margin-bottom: 200px;
+    .satisfied-container{
+        width: 1040px;
+        margin: 0 auto;
+        .top-section{
+            .heading{
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 58px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #251F17;
+            }
+            .text{
+                font-family: Poppins;
+font-size: 20px;
+font-weight: 400;
+line-height: 31px;
+letter-spacing: 0em;
+text-align: center;
+color: #544E47;
+padding: .5rem 0 1rem;
+            }
+        }
+        .customer-section{
+            position: relative;
+              display: block;
+              margin: 0 auto;
+              height: 751px;
+              background: url("../../assets/images/rectangle6.svg");
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              padding: 3rem 0;
+              .css-doq0dk{
+                position: relative;
+.css-1fzpoyk{
+  width: 28% !important;
+  // z-index: 1 !important;
+  opacity: 1 !important;
+  .card {
+    img{
+      border-radius: 5px;
+      width: 100% !important;
+    }
+  
+    }
+}
+              }
+              .text-container{
+                width: 600px;
+                margin: 0 auto;
+                padding: 2rem 4rem 1rem;
+                .carousel-text{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #251F17;
+                }
+              }
+              .carousel-header{
+                width: 600px;
+                margin: 0 auto;
+                padding: 0 5rem;
+
+
+span{
+  font-weight: 700;
+}
+
+
+font-size: 18px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+color: #03749D;
+
+              }
+
+              .dot-container{
+                align-self: end;
+                width: 600px;
+                margin: 0 auto;
+                .dots-content{
+                  width: 114px;
+                  margin: 0 auto;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 2rem 0;
+                  .dot{
+                    width: 10px;
+                    aspect-ratio: 1/1;
+                    background-color: #D9D9D9;
+                    border-radius: 50px;
+                    &:hover{
+                      cursor: pointer;
+                    }
+                   
+                  }
+                  .active-dot{
+                    background-color: #03749D;
+                  }
+                }
+              }
+            
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+  
