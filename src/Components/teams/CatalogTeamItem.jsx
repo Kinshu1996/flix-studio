@@ -67,7 +67,7 @@ const CatalogTeamItem = ({
         <div className="text">{item.text}</div>
         <div className="knowBtn">
           <div>Know more</div>
-          <img src={arrow} alt="arrow-icon" />
+          <img src={arrow} alt="arrow-icon" loading="lazy" />
         </div>
       </div>
     </div>

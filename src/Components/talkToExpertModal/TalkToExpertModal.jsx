@@ -43,6 +43,7 @@ const TalkToExpertModal = ({isModalOpen, handleCancel}) => {
               src={`data:image/svg+xml;utf8,${encodeURIComponent(
                 CountryFlagSvg[elm.isoCode2]
               )}`}
+              loading="lazy"
             />{" "}
             +{elm.countryCodes[0]}
           </Option>
@@ -60,7 +61,7 @@ const TalkToExpertModal = ({isModalOpen, handleCancel}) => {
       >
         <div className="modal-container">
           <div className="modal-gif">
-            <img src={modalGif} alt="" />
+            <img src={modalGif} alt="modalImg" loading="lazy" />
           </div>
           <div className="modal-right-side-content">
             <div className="model-content">

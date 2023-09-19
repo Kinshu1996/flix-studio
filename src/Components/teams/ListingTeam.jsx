@@ -21,14 +21,14 @@ const ListingTeam = () => {
            Garment tag scanner: AI-enabled, copy product attributes from garment tag in a giffy, no more manual entries for product listing csv!           </div>
            <div className="knowBtn">
             <div>Know more</div>
-            <img src={arrow} alt="arrow-icon" />
+            <img src={arrow} alt="arrow-icon" loading="lazy" />
            </div>
          </div>
          }
         </div>
       </div>
       <div className="right-side text-focus-in">
-      <img src={img1} alt="img1" />
+      <img src={img1} alt="img1" loading="lazy" />
       </div>
     </div>
     </div>

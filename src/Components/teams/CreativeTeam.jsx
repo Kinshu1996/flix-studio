@@ -25,7 +25,7 @@ const CreativeTeam = () => {
            </div>
            <div className="knowBtn">
             <div>Know more</div>
-            <img src={arrow} alt="arrow-icon" />
+            <img src={arrow} alt="arrow-icon" loading="lazy" />
            </div>
          </div>
          }
@@ -40,7 +40,7 @@ const CreativeTeam = () => {
             </div>
             <div className="knowBtn">
             <div>Know more</div>
-            <img src={arrow} alt="arrow-icon" />
+            <img src={arrow} alt="arrow-icon" loading="lazy" />
            </div>
           </div>
         </div>
@@ -55,14 +55,14 @@ const CreativeTeam = () => {
             </div>
             <div className="knowBtn">
             <div>Know more</div>
-            <img src={arrow} alt="arrow-icon" />
+            <img src={arrow} alt="arrow-icon" loading="lazy" />
            </div>
           </div>
         </div>
       </div>
       <div className="right-side text-focus-in">
         {
-          activeItem === "1" ? <img src={img1} alt="img1" /> : activeItem === "2" ? <img src={img2} alt="img2" /> : <img src={img3} alt="img3" />
+          activeItem === "1" ? <img src={img1} alt="img1" loading="lazy" /> : activeItem === "2" ? <img src={img2} alt="img2" loading="lazy" /> : <img src={img3} alt="img3" loading="lazy" />
         }
       </div>
     </div>

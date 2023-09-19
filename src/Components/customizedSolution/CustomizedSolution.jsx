@@ -11,12 +11,11 @@ import icon2 from "../../assets/images/arrowIcon2.svg";
 import { Button } from "antd";
 import GetStarted from "../getStarted/GetStarted";
 
-
 const CustomizedSolution = () => {
   const [isHoveredFirst, setIsHoveredFirst] = useState(false);
   const [isHoveredSecond, setIsHoveredSecond] = useState(false);
   const [isHoveredThird, setIsHoveredThird] = useState(false);
-  
+
   const handleHoverFirst = () => {
     setIsHoveredFirst(!isHoveredFirst);
   };
@@ -34,8 +33,8 @@ const CustomizedSolution = () => {
       id: 1,
       img: (
         <div className="img">
-          <img src={icon6} alt="icon" className="img-icon" />
-          <img src={img1} alt="img1" className="first-img" />
+          <img src={icon6} alt="icon" className="img-icon" loading="lazy" />
+          <img src={img1} alt="img1" className="first-img" loading="lazy" />
         </div>
       ),
       title: (
@@ -63,6 +62,7 @@ const CustomizedSolution = () => {
             src={isHoveredFirst ? icon2 : icon1}
             alt="icon"
             className="btn-icon"
+            loading="lazy"
           />
         </Button>
       ),
@@ -71,7 +71,7 @@ const CustomizedSolution = () => {
       id: 2,
       img: (
         <div className="img">
-          <img src={img2} alt="img2" />
+          <img src={img2} alt="img2" loading="lazy" />
         </div>
       ),
       title: (
@@ -99,6 +99,7 @@ const CustomizedSolution = () => {
             src={isHoveredSecond ? icon2 : icon1}
             alt="icon"
             className="btn-icon"
+            loading="lazy"
           />
         </Button>
       ),
@@ -107,7 +108,7 @@ const CustomizedSolution = () => {
       id: 3,
       img: (
         <div className="img">
-          <img src={img3} alt="img3" />
+          <img src={img3} alt="img3" loading="lazy" />
         </div>
       ),
       title: (
@@ -134,6 +135,7 @@ const CustomizedSolution = () => {
             src={isHoveredThird ? icon2 : icon1}
             alt="icon"
             className="btn-icon"
+            loading="lazy"
           />
         </Button>
       ),

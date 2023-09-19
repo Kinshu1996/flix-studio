@@ -23,8 +23,13 @@ const Offers = () => {
             <Col span={24}>
               <div className="col first-col">
                 <div className="img">
-                  <img src={offerImg1} alt="offerImg" />
-                  <img src={offIcon} alt="off-icon" className="off-icon" />
+                  <img src={offerImg1} alt="offerImg" loading="lazy" />
+                  <img
+                    src={offIcon}
+                    alt="off-icon"
+                    className="off-icon"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="content">
                   <div className="item-title">
@@ -52,7 +57,7 @@ const Offers = () => {
             <Col span={12}>
               <div className="col sec-col">
                 <div className="img">
-                  <img src={offerImg2} alt="offerImg" />
+                  <img src={offerImg2} alt="offerImg" loading="lazy" />
                 </div>
                 <div className="content">
                   <div className="item-title">360 Product video</div>
@@ -75,7 +80,7 @@ const Offers = () => {
             <Col span={12}>
               <div className="col third-col">
                 <div className="img">
-                  <img src={offerImg3} alt="offerImg" />
+                  <img src={offerImg3} alt="offerImg" loading="lazy" />
                 </div>
                 <div className="content">
                   <div className="item-title">Ghost image creation</div>

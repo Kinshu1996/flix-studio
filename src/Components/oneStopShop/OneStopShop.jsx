@@ -22,10 +22,12 @@ const itemsData = [
     btn: (
       <div className="btn">
         <div>Explore catalog packs</div>
-        <img src={vector1} alt="vector" />
+        <img src={vector1} alt="vector" loading="lazy" />
       </div>
     ),
-    icon: <img className="img-icon icon1" src={icon1} alt="icon" />,
+    icon: (
+      <img className="img-icon icon1" src={icon1} alt="icon" loading="lazy" />
+    ),
   },
   {
     id: 2,
@@ -39,10 +41,12 @@ const itemsData = [
     btn: (
       <div className="btn">
         <div>Explore video packs</div>
-        <img src={vector1} alt="vector" />
+        <img src={vector1} alt="vector" loading="lazy" />
       </div>
     ),
-    icon: <img className="img-icon icon2" src={icon2} alt="icon" />,
+    icon: (
+      <img className="img-icon icon2" src={icon2} alt="icon" loading="lazy" />
+    ),
   },
   {
     id: 3,
@@ -56,10 +60,12 @@ const itemsData = [
     btn: (
       <div className="btn">
         <div>Explore creative packs</div>
-        <img src={vector1} alt="vector" />
+        <img src={vector1} alt="vector" loading="lazy" />
       </div>
     ),
-    icon: <img className="img-icon icon3" src={icon3} alt="icon" />,
+    icon: (
+      <img className="img-icon icon3" src={icon3} alt="icon" loading="lazy" />
+    ),
   },
 ];
 const OneStopShop = () => {
@@ -81,7 +87,12 @@ const OneStopShop = () => {
               <div className="items flex-column" key={index}>
                 <div className="item-img ">
                   {item.icon}
-                  <img className="img" src={item.img} alt="img" />
+                  <img
+                    className="img"
+                    src={item.img}
+                    alt="img"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="heading">{item.title}</div>
                 {item.text}
@@ -95,5 +106,6 @@ const OneStopShop = () => {
     </>
   );
 };
+
 
 export default OneStopShop;
