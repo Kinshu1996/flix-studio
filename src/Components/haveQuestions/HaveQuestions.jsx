@@ -143,11 +143,7 @@ const HaveQuestions = () => {
             expandIconPosition="end"
             items={items}
             expandIcon={({ isActive }) =>
-              isActive ? (
-                <img src={crossIcon} alt="crossIcon" loading="lazy" />
-              ) : (
-                <img src={plusIcon} alt="plusIcon" loading="lazy" />
-              )
+              isActive ? <img src={crossIcon} alt="crossIcon"  /> : <img src={plusIcon} alt="plusIcon"  />
             }
           />
         </div>

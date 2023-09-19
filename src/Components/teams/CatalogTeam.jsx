@@ -99,7 +99,7 @@ const CatalogTeam = () => {
           style={{ cursor: "pointer" }}
           onClick={() => handleClick("prev")}
         >
-          <img src={Prev} alt="prevBtn" loading="lazy" />
+          <img src={Prev} alt="prevBtn"  />
         </div>
 
         <div className="carousel">
@@ -129,11 +129,11 @@ const CatalogTeam = () => {
           style={{ cursor: "pointer" }}
           onClick={() => handleClick("next")}
         >
-          <img src={Next} alt="nextBtn" loading="lazy" />
+          <img src={Next} alt="nextBtn"  />
         </div>
       </div>
       <div className="right-side text-focus-in">
-        <img src={data[activeIndex].img} alt="img" loading="lazy" />
+        <img src={data[activeIndex].img} alt="img" />
       </div>
     </div>
   );

@@ -28,6 +28,7 @@ import b24 from "../../assets/images/b24.svg";
 import b25 from "../../assets/images/b25.svg";
 import b26 from "../../assets/images/b26.svg";
 
+
 const ImageryBeyond = () => {
   return (
     <div className="beyond-section">
@@ -53,31 +54,17 @@ const ImageryBeyond = () => {
                 <table>
                   <tr>
                     <td>
-                      <img src={b1} alt="b1" loading="lazy" />
+                        <img src={b1} alt="b1"  />
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src={b2} alt="b1" loading="lazy" />
+                    <img src={b2} alt="b1"  />
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src={b3} alt="b1" loading="lazy" />
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td>
-                <table>
-                  <tr>
-                    <td>
-                      <img src={b4} alt="b1" loading="lazy" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src={b5} alt="b1" loading="lazy" />
+                    <img src={b3} alt="b1"  />
                     </td>
                   </tr>
                 </table>
@@ -86,17 +73,12 @@ const ImageryBeyond = () => {
                 <table>
                   <tr>
                     <td>
-                      <img src={b6} alt="b1" loading="lazy" />
+                    <img src={b4} alt="b1"  />
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src={b7} alt="b1" loading="lazy" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src={b8} alt="b1" loading="lazy" />
+                    <img src={b5} alt="b1"  />
                     </td>
                   </tr>
                 </table>
@@ -105,12 +87,17 @@ const ImageryBeyond = () => {
                 <table>
                   <tr>
                     <td>
-                      <img src={b9} alt="b1" loading="lazy" />
+                    <img src={b6} alt="b1"  />
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src={b10} alt="b1" loading="lazy" />
+                    <img src={b7} alt="b1"  />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                    <img src={b8} alt="b1"  />
                     </td>
                   </tr>
                 </table>
@@ -119,17 +106,31 @@ const ImageryBeyond = () => {
                 <table>
                   <tr>
                     <td>
-                      <img src={b11} alt="b1" loading="lazy" />
+                    <img src={b9} alt="b1"  />
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src={b12} alt="b1" loading="lazy" />
+                    <img src={b10} alt="b1"  />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <td>
+                    <img src={b11} alt="b1"  />
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src={b13} alt="b1" loading="lazy" />
+                    <img src={b12} alt="b1"  />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                    <img src={b13} alt="b1"  />
                     </td>
                   </tr>
                 </table>
@@ -140,31 +141,17 @@ const ImageryBeyond = () => {
                 <table>
                   <tr>
                     <td>
-                      <img src={b14} alt="b14" loading="lazy" />
+                        <img src={b14} alt="b14"  />
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src={b15} alt="b15" loading="lazy" />
+                    <img src={b15} alt="b15"  />
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src={b16} alt="b16" loading="lazy" />
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td>
-                <table>
-                  <tr>
-                    <td>
-                      <img src={b17} alt="b17" loading="lazy" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src={b18} alt="b18" loading="lazy" />
+                    <img src={b16} alt="b16"  />
                     </td>
                   </tr>
                 </table>
@@ -173,17 +160,12 @@ const ImageryBeyond = () => {
                 <table>
                   <tr>
                     <td>
-                      <img src={b19} alt="b19" loading="lazy" />
+                    <img src={b17} alt="b17"  />
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src={b20} alt="b20" loading="lazy" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src={b21} alt="b21" loading="lazy" />
+                    <img src={b18} alt="b18"  />
                     </td>
                   </tr>
                 </table>
@@ -192,12 +174,17 @@ const ImageryBeyond = () => {
                 <table>
                   <tr>
                     <td>
-                      <img src={b22} alt="b22" loading="lazy" />
+                    <img src={b19} alt="b19"  />
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src={b23} alt="b23" loading="lazy" />
+                    <img src={b20} alt="b20"  />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                    <img src={b21} alt="b21"  />
                     </td>
                   </tr>
                 </table>
@@ -206,17 +193,31 @@ const ImageryBeyond = () => {
                 <table>
                   <tr>
                     <td>
-                      <img src={b24} alt="b24" loading="lazy" />
+                    <img src={b22} alt="b22"  />
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src={b25} alt="b25" loading="lazy" />
+                    <img src={b23} alt="b23"  />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <td>
+                    <img src={b24} alt="b24"  />
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src={b26} alt="b26" loading="lazy" />
+                    <img src={b25} alt="b25"  />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                    <img src={b26} alt="b26"  />
                     </td>
                   </tr>
                 </table>

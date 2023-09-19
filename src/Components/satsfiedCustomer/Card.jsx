@@ -19,7 +19,7 @@ function Card({ imagen }) {
       onMouseEnter={() => setShown(true)}
       onMouseLeave={() => setShown(false)}
     >
-      <img src={imagen} alt="" loading="lazy" />
+      <img src={imagen} alt=""  />
     </animated.div>
    
     </>

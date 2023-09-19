@@ -68,12 +68,12 @@ const WhyFlixStudio = () => {
           <div className="marque-group">
           <div className="marquee">
             {imgData.map((item) => (
-              <img src={item.img} alt="img" loading="lazy" />
+              <img src={item.img} alt="img" />
             ))}
           </div>
             <div className="marquee marquee-2">
             {imgData.map((item) => (
-              <img src={item.img} alt="img" loading="lazy" />
+              <img src={item.img} alt="img" />
             ))}
           </div>
           </div>
@@ -115,10 +115,10 @@ const WhyFlixStudio = () => {
           <div className="row">
             <div className="col5">
               <div className="item-content">
-                <img className="studio" src={studio} alt="img" loading="lazy" />
+                <img className="studio" src={studio} alt="img" />
                 <div className="flixImg">
-                    <img className="ownedIcon" src={ownedIcon} alt="ownedIcon" loading="lazy" />
-                  <img className="" src={flix} alt="flixImg" loading="lazy" />
+                    <img className="ownedIcon" src={ownedIcon} alt="ownedIcon" />
+                  <img className="" src={flix} alt="flixImg" />
                 </div>
                 <div className="country">
                   <span>USA</span>
