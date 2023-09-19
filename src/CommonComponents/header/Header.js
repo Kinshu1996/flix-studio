@@ -1,12 +1,12 @@
 import { Col, Dropdown, Layout, Menu, Row, Space } from "antd";
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import logo from "../../assets/images/logo.svg";
 import arrow1 from "../../assets/images/downarrow-icon.svg";
 import arrow2 from "../../assets/images/orange-arrow.svg";
 import { CustomButton as Button } from "../button/Button";
 import TalkToExpertModal from "../../Components/talkToExpertModal/TalkToExpertModal";
-import { Context } from "../context/AppContext";
+
 const { Header } = Layout;
 
 const AllProducts = () => {
@@ -318,7 +318,7 @@ const Teams = () => {
           </div>
           <div className="teams-bottom-section">
             <div className="teams-bottom-container">
-              {activeTeams == 0 ? (
+              {activeTeams === "0" ? (
                 <Row gutter={[48, 16]}>
                   <Col span={8}>
                     <Menu.Item key="1">
@@ -382,7 +382,7 @@ const Teams = () => {
                     </div>
                   </Col>
                 </Row>
-              ) : activeTeams == 1 ? (
+              ) : activeTeams === "1" ? (
                 <Row gutter={[48, 16]}>
                   <Col span={8}>
                     <Menu.Item key="1">
@@ -432,7 +432,7 @@ const Teams = () => {
                     </div>
                   </Col>
                 </Row>
-              ) : activeTeams == 2 ? (
+              ) : activeTeams === "2" ? (
                 <Row gutter={[48, 16]}>
                   <Col span={8}>
                     <Menu.Item key="1">
@@ -536,21 +536,24 @@ const Company = () => {
 };
 
 export const CustomHeader = () => {
-  const { showModal } = useContext(Context);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [active, setActive] = useState("1");
 
   const handleActive = (e) => {
     setActive(e.target.id);
   };
 
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+  
+
   return (
     <Header
       className="header-section"
-      // style={{
-      //   position: "sticky",
-      //   top: 0,
-      //   zIndex: 9,
-      // }}
     >
       <div className="top-header">
         <div className="top-header-container">
@@ -595,7 +598,7 @@ export const CustomHeader = () => {
               width="174px"
               onClick={showModal}
             />
-            <TalkToExpertModal />
+            <TalkToExpertModal isModalOpen={isModalOpen} handleCancel={handleCancel} />
           </div>
         </div>
       </div>

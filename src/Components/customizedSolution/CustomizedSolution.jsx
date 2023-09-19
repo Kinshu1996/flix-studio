@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useState } from "react";
 import "./CustomizedSolution.scss";
 
 import img1 from "../../assets/images/img10.svg";
@@ -10,18 +10,25 @@ import icon2 from "../../assets/images/arrowIcon2.svg";
 
 import { Button } from "antd";
 import GetStarted from "../getStarted/GetStarted";
-import { Context } from "../../CommonComponents/context/AppContext";
+
 
 const CustomizedSolution = () => {
-  const {
-    isHoveredFirst,
-    handleHoverFirst,
-    isHoveredSecond,
-    handleHoverSecond,
-    isHoveredThird,
-    handleHoverThird,
-  } = useContext(Context);
-  //   console.log(isHovered);
+  const [isHoveredFirst, setIsHoveredFirst] = useState(false);
+  const [isHoveredSecond, setIsHoveredSecond] = useState(false);
+  const [isHoveredThird, setIsHoveredThird] = useState(false);
+  
+  const handleHoverFirst = () => {
+    setIsHoveredFirst(!isHoveredFirst);
+  };
+
+  const handleHoverSecond = () => {
+    setIsHoveredSecond(!isHoveredSecond);
+  };
+
+  const handleHoverThird = () => {
+    setIsHoveredThird(!isHoveredThird);
+  };
+
   const data = [
     {
       id: 1,
@@ -142,8 +149,8 @@ const CustomizedSolution = () => {
             the perfect fit for your unique use case!
           </div>
           <div className="customized-content">
-            {data.map((item) => (
-              <div className="item">
+            {data.map((item, index) => (
+              <div className="item" key={index}>
                 {item.img}
                 {item.title}
                 {item.text}

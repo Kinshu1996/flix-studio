@@ -1,6 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./TalkToExpertModal.scss";
-import { Context } from "../../CommonComponents/context/AppContext";
 import { Form, Input, InputNumber, Modal, Select } from "antd";
 import { Option } from "antd/es/mentions";
 import codes from "country-calling-code";
@@ -8,10 +7,7 @@ import CountryFlagSvg from "country-list-with-dial-code-and-flag/dist/flag-svg";
 import modalGif from "../../assets/images/Model Gif 1.svg";
 import { CustomButton as Button } from "../../CommonComponents/button/Button";
 
-const TalkToExpertModal = () => {
-
-    const { isModalOpen, handleOk, handleCancel } =
-    useContext(Context);
+const TalkToExpertModal = ({isModalOpen, handleCancel}) => {
 
     const [countryCode, setCountryCode] = useState("US");
 
@@ -59,7 +55,6 @@ const TalkToExpertModal = () => {
     <div>
       <Modal
         open={isModalOpen}
-        onOk={handleOk}
         onCancel={handleCancel}
         className="expert-modal"
       >

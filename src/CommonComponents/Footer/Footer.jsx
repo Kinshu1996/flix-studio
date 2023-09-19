@@ -1,13 +1,11 @@
-import { Divider, Form, Input, Layout, Typography } from "antd";
+import { Divider, Layout } from "antd";
 import React from "react";
 import "./Footer.scss";
 import logo from "../../assets/images/footer-logo.svg";
 import { CustomButton as Button } from "../button/Button";
 import icon from "../../assets/images/studioIcon.svg";
 
-
 const { Footer } = Layout;
-
 
 export const CustomFooter = () => {
   return (
@@ -106,36 +104,17 @@ export const CustomFooter = () => {
             </div>
           </div>
           <div className="footer-medium">
-            {/* <div className="form">
-             <Form 
-             layout="inline"
-             >
-             <Form.Item
-        name="price"
-        label="Price"
-        rules={[
-          {
-            
-          },
-        ]}
-      >
-        <b
-        <Input />
-      </Form.Item>
-      <Form.Item>
-        <Button type="primary" htmlType="submit">
-          Submit
-        </Button>
-      </Form.Item>
-             </Form>
-            </div> */}
             <div className="form">
               <form>
                 <label>Subscribe to our emails</label>
                 <br />
                 <input placeholder="Your email" type="email" />
 
-                <Button text="SIGN UP" className="primaryBtn Button" width="175px" />
+                <Button
+                  text="SIGN UP"
+                  className="primaryBtn Button"
+                  width="175px"
+                />
               </form>
             </div>
           </div>
@@ -143,11 +122,6 @@ export const CustomFooter = () => {
           <div className="footer-bottom">
             <div className="bottom-up">
               <div className="left">
-                {/* <img src={link_1} alt="link_1" />
-                <img src={link_2} alt="link_2" />
-                <img src={link_3} alt="link_3" />
-                <img src={link_4} alt="link_4" /> */}
-
                 <div className="link-text">press room</div>
                 <div className="link-text">terms of use</div>
                 <div className="link-text">preferred terms</div>

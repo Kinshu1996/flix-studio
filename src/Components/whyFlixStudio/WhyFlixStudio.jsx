@@ -7,7 +7,6 @@ import brand4 from "../../assets/images/brand4.svg";
 import brand5 from "../../assets/images/brand5.svg";
 import brand6 from "../../assets/images/brand6.svg";
 import brand7 from "../../assets/images/brand7.svg";
-import brand8 from "../../assets/images/brand8.svg";
 import studio from "../../assets/images/studio.svg";
 import flix from "../../assets/images/FLIX.svg";
 import ownedIcon from "../../assets/images/ownedIcon.svg";
@@ -42,10 +41,6 @@ const imgData = [
     id: 7,
     img: brand7,
   },
-  // {
-  //   id: 8,
-  //   img: brand8,
-  // },
 ];
 const WhyFlixStudio = () => {
   return (

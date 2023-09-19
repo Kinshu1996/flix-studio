@@ -1,79 +1,77 @@
 @import "../../assets/scss/variable.scss";
-.explore-section{
-    .explore-container{
-        width: 85%;
-        margin: 0 auto;
-        .top-section{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            .rect1{
-                position: absolute;
-                left: 12rem;
-                top: 5rem;
-            }
-            .rect2{
-                position: absolute;
-                top: 0;
-                right: 15rem;
-            }
-            .rect3{
-                position: absolute;
-                top: 5rem;
-                right: 5rem;
-            }
-            .heading{
-                font-family: Poppins;
-font-size: 40px;
-font-weight: 600;
-line-height: 60px;
-letter-spacing: 0.02em;
-color: $black1;
-padding-top: 2rem;
-            }
-            .trending-btn{
-                display: flex;
-                gap: 5rem;
-                padding: 2rem 0;
-                .trending{
-font-size: 20px;
-font-weight: 500;
-line-height: 30px;
-letter-spacing: 0em;
-color: #544E47;
-&:hover{
-cursor: pointer;
-}
-                }
-                .active{
-                    font-size: 20px;
-font-weight: 500;
-line-height: 30px;
-letter-spacing: 0em;
-                    font-weight: 600;
-                    color: $primary;
-                    border-bottom: 2px solid $primary;
-                    padding-bottom: .5rem;
-                                }
-                
-                
-            }
-           
-            .text{
-                font-size: 20px;
-                font-weight: 400;
-                line-height: 30px;
-                letter-spacing: 0em;
-                color: #544E47;
-                span{
-                    font-weight: 700;
-                    color: $primary;
-                }
-                                }
+.explore-section {
+  .explore-container {
+    width: 85%;
+    margin: 0 auto;
+    .top-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      .rect1 {
+        position: absolute;
+        left: 12rem;
+        top: 5rem;
+      }
+      .rect2 {
+        position: absolute;
+        top: 0;
+        right: 15rem;
+      }
+      .rect3 {
+        position: absolute;
+        top: 5rem;
+        right: 5rem;
+      }
+      .heading {
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: 0.02em;
+        color: $black1;
+        padding-top: 2rem;
+      }
+      .trending-btn {
+        display: flex;
+        gap: 5rem;
+        padding: 2rem 0;
+        .trending {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: 0em;
+          color: #544e47;
+          &:hover {
+            cursor: pointer;
+          }
         }
-        .bottom-section{
-            padding: 1rem 0;
+        .active {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: 0em;
+          font-weight: 600;
+          color: $primary;
+          border-bottom: 2px solid $primary;
+          padding-bottom: 0.5rem;
         }
+      }
+
+      .text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        color: #544e47;
+        span {
+          font-weight: 700;
+          color: $primary;
+        }
+      }
     }
+    .bottom-section {
+      padding: 1rem 0;
+    }
+  }
 }

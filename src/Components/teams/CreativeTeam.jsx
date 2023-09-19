@@ -8,7 +8,6 @@ import arrow from "../../assets/images/knowIcon.svg";
 const CreativeTeam = () => {
   const [activeItem, setActiveItem] = useState("1");
   const handleClick = (e) => {
-    console.log(e.target.id);
     setActiveItem(e.target.id);
   };
   return (
@@ -20,7 +19,7 @@ const CreativeTeam = () => {
           Life style images
           </div>
          {
-           <div className={activeItem == "1" ? "shown item-text" : "hide" }>
+           <div className={activeItem === "1" ? "shown item-text" : "hide" }>
            <div className="text">
            Enrich product storytelling: transform e-commerce imagery into lifestyle shots, enabling buyers to visualize products in specific scenarios!
            </div>
@@ -35,7 +34,7 @@ const CreativeTeam = () => {
           <div className={activeItem === "2" ? "active-title" : "item-title"} id={"2"} onClick={handleClick}>
           Instagram creatives
           </div>
-          <div className={activeItem == "2" ? "shown item-text" : "hide" }>
+          <div className={activeItem === "2" ? "shown item-text" : "hide" }>
             <div className="text">
             Instagram creatives creation made easy. turn plain white backgrounds into Instagram-worthy posts!
             </div>
@@ -50,7 +49,7 @@ const CreativeTeam = () => {
           Outdoor content creation from home
           </div>
           
-            <div className={activeItem == "3" ? "shown item-text" : "hide" }>
+            <div className={activeItem === "3" ? "shown item-text" : "hide" }>
             <div className="text">
             Simplify outdoor product photography: generate images in any location from the comfort of your home!
             </div>

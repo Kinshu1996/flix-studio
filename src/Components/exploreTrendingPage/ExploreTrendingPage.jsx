@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./ExploreTrendingPage.scss";
 import rect1 from "../../assets/images/rect1.svg";
 import rect2 from "../../assets/images/rect2.svg";

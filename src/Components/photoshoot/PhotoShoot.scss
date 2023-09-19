@@ -1,46 +1,44 @@
 @import "../../assets/scss/variable.scss";
-.photoshoot-section{
-    background-color: $lightOrange;
-    margin-bottom: 200px;
-    .photoshoot-container{
-        width: 85%;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 8rem 0 5rem;
-       
-        .left-side{
-            width: 35%;
-            .text-pad{
-                padding: 1.5rem 0;
-            }
-            .button-section{
-                display: flex;
-                gap: 2rem;
-            }
-        }
-        .right-side{
-// width: 50%;
-position: relative;
-
-.row{
+.photoshoot-section {
+  background-color: $lightOrange;
+  margin-bottom: 200px;
+  .photoshoot-container {
+    width: 85%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: .5rem;
-}
-        }
-    }
-}
+    justify-content: space-between;
+    padding: 8rem 0 5rem;
 
+    .left-side {
+      width: 35%;
+      .text-pad {
+        padding: 1.5rem 0;
+      }
+      .button-section {
+        display: flex;
+        gap: 2rem;
+      }
+    }
+    .right-side {
+      position: relative;
+
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1444px) {
-    .photoshoot-section{
-        .photoshoot-container{
-            .left-side{
-                width: 37%;
-            }
-        }
+  .photoshoot-section {
+    .photoshoot-container {
+      .left-side {
+        width: 37%;
+      }
     }
+  }
 }

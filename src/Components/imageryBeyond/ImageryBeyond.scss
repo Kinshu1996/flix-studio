@@ -1,6 +1,6 @@
 @import "../../assets/scss/variable.scss";
 .beyond-section {
-    margin-bottom: 200px;
+  margin-bottom: 200px;
   .beyond-container {
     .top-section {
       display: flex;
@@ -15,7 +15,6 @@
 
         color: #251f17;
         position: relative;
-        // top: -4rem;
       }
 
       .heading {
@@ -39,25 +38,18 @@
         }
       }
     }
-    .image-container{
-        
-        table{
-            // width: 100vw;
-            // aspect-ratio: 1/1;
-            width: 100%;
-            // object-fit: fill;
-            margin: 0 auto;
-            border-spacing: 0.5rem;
-            // td{
-            //     margin: 0 auto;
-            // }
-            
+    .image-container {
+      table {
+        width: 100%;
+
+        margin: 0 auto;
+        border-spacing: 0.5rem;
+      }
+      @media screen and (max-width: 1444px) {
+        table {
+          border-spacing: 0.2rem;
         }
-        @media  screen and (max-width: 1444px) {
-            table{
-                border-spacing: 0.2rem;
-            }   
-        }
+      }
     }
   }
 }

@@ -19,43 +19,43 @@ const data = [
     id: 0,
     title: "Ship and sip coffee",
     img: img1,
-    text: "Send us your product, we'll handle the rest: wake up to stunning images with your morning coffee!"
+    text: "Send us your product, we'll handle the rest: wake up to stunning images with your morning coffee!",
   },
   {
     id: 1,
     title: "FlixModel",
     img: img2,
-    text: "Enhance your in house studio shoots: choose from 1000+ meta models for your mannequin-based photography!"
+    text: "Enhance your in house studio shoots: choose from 1000+ meta models for your mannequin-based photography!",
   },
   {
     id: 2,
     title: "Packshot/Ghost",
     img: img3,
-    text: "Slash catalog costs by 60% affordable and optimal visualization with ghost/pack-shot for transparent product communication"
+    text: "Slash catalog costs by 60% affordable and optimal visualization with ghost/pack-shot for transparent product communication",
   },
   {
     id: 3,
     title: "Colourways",
     img: img4,
-    text: "Boost Conversion Chances: Cut Visualization Time & Display all Product Colors on Models images, Not Just Swatches!"
+    text: "Boost Conversion Chances: Cut Visualization Time & Display all Product Colors on Models images, Not Just Swatches!",
   },
   {
     id: 4,
     title: "Flix3D",
     img: img5,
-    text: "Want to test which product would work in the market before actually manufacturing it? Try Flix3D"
+    text: "Want to test which product would work in the market before actually manufacturing it? Try Flix3D",
   },
   {
     id: 5,
     title: "Virtual walk",
     img: img6,
-    text: " Elevate buyer experience: utilize virtual walk to showcase fit, fall, length, weight & garment characteristics!"
+    text: " Elevate buyer experience: utilize virtual walk to showcase fit, fall, length, weight & garment characteristics!",
   },
   {
     id: 6,
     title: "Product Videos",
     img: img7,
-    text: "Product videos has better engagement compared to images. Use product video as versatile marketing content. "
+    text: "Product videos has better engagement compared to images. Use product video as versatile marketing content. ",
   },
 ];
 const CatalogTeam = () => {
@@ -68,10 +68,9 @@ const CatalogTeam = () => {
   const itemHeight = 3.2;
 
   // #3 above. Used to determine at what point an item is moved from the top to the bottom
-  const shuffleThreshold = halfwayIndex * itemHeight;
+  // const shuffleThreshold = halfwayIndex * itemHeight;
 
   const handleClick = (direction) => {
-    console.log(data[activeIndex].title);
     setActiveIndex((prevIndex) => {
       if (direction === "next") {
         // If we are at the end of the carousel, set the index to 0
@@ -94,9 +93,10 @@ const CatalogTeam = () => {
 
   return (
     <div className="team-section">
-      <div className="left-side" style = {{display: "flex",gap: "3rem"}}>
+      <div className="left-side" style={{ display: "flex", gap: "3rem" }}>
         <div
-          className="carousel-button prev" style={{cursor: "pointer"}}
+          className="carousel-button prev"
+          style={{ cursor: "pointer" }}
           onClick={() => handleClick("prev")}
         >
           <img src={Prev} alt="prevBtn" />
@@ -104,23 +104,29 @@ const CatalogTeam = () => {
 
         <div className="carousel">
           <div className="slides">
-            <div className="carousel-inner" >
+            <div className="carousel-inner">
               {data.map((item, i) => (
-                <CatalogTeamItem halfwayIndex={halfwayIndex} itemHeight={itemHeight} shuffleThreshold={shuffleThreshold} activeIndex={activeIndex} setActiveIndex={setActiveIndex} data={data} 
+                <CatalogTeamItem
+                  halfwayIndex={halfwayIndex}
+                  itemHeight={itemHeight}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
                   className={cn("carousel-item", {
                     active: activeIndex === i,
                   })}
-                  key={item.id} item={item} i={i} />
+                  key={item.id}
+                  item={item}
+                  i={i}
+                />
               ))}
             </div>
-            
           </div>
         </div>
 
         <div
           type="button"
-          className="carousel-button next" 
-          style={{cursor: "pointer"}}
+          className="carousel-button next"
+          style={{ cursor: "pointer" }}
           onClick={() => handleClick("next")}
         >
           <img src={Next} alt="nextBtn" />

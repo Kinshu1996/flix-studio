@@ -1,11 +1,11 @@
 import Carousel from "react-spring-3d-carousel";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { config } from "react-spring";
-import { Context } from "../../CommonComponents/context/AppContext";
+
 
 export default function Carausel(props) {
 
-  const {goToSlide, setGoToSlide} = useContext(Context);
+  const [goToSlide, setGoToSlide] = useState(0);
 
   const table = props.cards.map((element, index) => {
     return { ...element, onClick: () => setGoToSlide(index) };
@@ -17,21 +17,17 @@ export default function Carausel(props) {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setGoToSlide((prevIndex) =>
-        prevIndex === props.cards.length - 1 ? 0 : prevIndex + 1
+        prevIndex === cards.length - 1 ? 0 : prevIndex + 1
       );
     }, 3000);
 
     return () => {
       clearInterval(intervalId); // Clear the interval when the component unmounts
     };
-  }, [props.cards, 3000]);
-
-  // const carouselConfig = {
-  //   spaceBetween: "20px", // Adjust this value to reduce the gap
-  //   // Other configuration options go here
-  // };
+  }, [cards]);
 
   return (
+   <>
     <div
         style={{
           height: props.height,
@@ -42,8 +38,27 @@ export default function Carausel(props) {
           slides={cards}
           goToSlide={goToSlide}
           animationConfig={config.gentle}
-          
         />
       </div>
+      <div className="text-container">
+      <div className="carousel-text">
+        {cards.map((item, index) => (
+          <div className="text-content" key={index}>
+            {item.key === goToSlide ? <div>{item.text}</div> : ""}
+          </div>
+        ))}
+      </div>
+    </div>
+    <div className="dot-container">
+      <div className="dots-content">
+        {cards.map((item, index) => (
+          <div
+            className={goToSlide === index ? "dot active-dot" : "dot"}
+            onClick={() => setGoToSlide(index)}
+          ></div>
+        ))}
+      </div>
+    </div>
+   </>
   );
 }

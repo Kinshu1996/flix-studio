@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
-function Card({ imagen,text }) {
+function Card({ imagen }) {
   const [show, setShown] = useState(false);
 
   const props3 = useSpring({

@@ -12,7 +12,6 @@ import GetStarted from "../getStarted/GetStarted";
 const itemsData = [
   {
     id: 1,
-    // img: gif2,
     img: img,
     title: "Catalog shoot",
     text: (
@@ -30,7 +29,6 @@ const itemsData = [
   },
   {
     id: 2,
-    // img: gif2,
     img: gif1,
     title: "Video shoot",
     text: (
@@ -48,7 +46,6 @@ const itemsData = [
   },
   {
     id: 3,
-    // img: gif2,
     img: gif2,
     title: "Creative shoot",
     text: (
@@ -80,8 +77,8 @@ const OneStopShop = () => {
             Powered by Gen-AI tools{" "}
           </div>
           <div className="content space-between">
-            {itemsData.map((item) => (
-              <div className="items flex-column">
+            {itemsData.map((item, index) => (
+              <div className="items flex-column" key={index}>
                 <div className="item-img ">
                   {item.icon}
                   <img className="img" src={item.img} alt="img" />

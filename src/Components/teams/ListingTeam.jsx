@@ -5,7 +5,6 @@ import arrow from "../../assets/images/knowIcon.svg";
 const ListingTeam = () => {
   const [activeItem, setActiveItem] = useState("1");
   const handleClick = (e) => {
-    console.log(e.target.id);
     setActiveItem(e.target.id);
   };
   return (
@@ -17,7 +16,7 @@ const ListingTeam = () => {
           Tag scanner
           </div>
          {
-           <div className={activeItem == "1" ? "shown item-text" : "hide" }>
+           <div className={activeItem === "1" ? "shown item-text" : "hide" }>
            <div className="text">
            Garment tag scanner: AI-enabled, copy product attributes from garment tag in a giffy, no more manual entries for product listing csv!           </div>
            <div className="knowBtn">

@@ -1,5 +1,4 @@
 .combo-offer-section {
-  // margin: 6rem 0;
   margin-bottom: 200px;
   .combo-offer-container {
     width: 80%;
@@ -17,23 +16,19 @@
       z-index: 1;
       padding-top: 3rem;
       padding-left: 3rem;
-    //   padding-right: 3rem;
       .pic-content {
         display: flex;
-        // align-items: center;
         gap: 1.3rem;
-        .left-pic {
-        }
         .right-pic {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          .top{
+          .top {
             position: relative;
-            .combo-offer{
-                position: absolute;
-                right: -6rem;
-                top: -6rem;
+            .combo-offer {
+              position: absolute;
+              right: -6rem;
+              top: -6rem;
             }
           }
         }
@@ -41,57 +36,55 @@
       .text-content {
         display: flex;
         width: 100%;
-        // justify-content: space-between;
         gap: 2rem;
-        .left-text{
-            width: 40%;
-            display: flex;
-            gap: 5rem;
-            .mega {
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 30px;
-                letter-spacing: 0em;
-                text-align: left;
-                color: #251f17;
-                .off40 {
-                  font-size: 32px;
-                  font-weight: 600;
-                  line-height: 49px;
-                  letter-spacing: 0em;
-                  text-align: left;
-                }
-              }
-              .only {
-                align-self: end;
-                font-size: 24px;
-                font-weight: 600;
-                line-height: 36px;
-                letter-spacing: 0em;
-                text-align: left;
-                color: #252628;
-                span {
-                  font-size: 32px;
-                  font-weight: 700;
-                  line-height: 48px;
-                  letter-spacing: 0em;
-                  text-align: left;
-                }
-                .dollar {
-                  font-size: 16px;
-                  font-weight: 500;
-                  line-height: 24px;
-                  letter-spacing: 0em;
-                  text-align: left;
-                  color: #2526289c;
-                  text-decoration: line-through;
-                 
-                }
-              }
+        .left-text {
+          width: 40%;
+          display: flex;
+          gap: 5rem;
+          .mega {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #251f17;
+            .off40 {
+              font-size: 32px;
+              font-weight: 600;
+              line-height: 49px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+          }
+          .only {
+            align-self: end;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #252628;
+            span {
+              font-size: 32px;
+              font-weight: 700;
+              line-height: 48px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+            .dollar {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 24px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: #2526289c;
+              text-decoration: line-through;
+            }
+          }
         }
         .get {
-            width: 50%;
-            align-self: center;
+          width: 50%;
+          align-self: center;
           font-size: 30px;
           font-weight: 600;
           line-height: 45px;
@@ -101,34 +94,31 @@
         }
       }
     }
-    .bottom-container{
+    .bottom-container {
+      display: flex;
+      gap: 10rem;
+      .left-side {
+        align-self: end;
+      }
+      .right-side {
         display: flex;
-        gap: 10rem;
-        .left-side{
-            // width: 70%;
-            align-self: end;
-
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        .tik-container {
+          display: flex;
+          align-items: center;
+          .tik-text {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #251f17;
+            padding-left: 0.5rem;
+          }
         }
-        .right-side{
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            align-items: center;
-            .tik-container{
-                display: flex;
-                align-items: center;
-                .tik-text{
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-color: #251F17;
-padding-left: .5rem;
-                }
-            }
-
-        }
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./SatisfiedCustomer.scss";
 import img1 from "../../assets/images/Carousel1.svg";
 import img2 from "../../assets/images/Carousel2.svg";
@@ -7,7 +7,8 @@ import img4 from "../../assets/images/carousel4.svg";
 import img5 from "../../assets/images/carousel5.svg";
 import Card from "./Card";
 import Carausel from "./Carausel.jsx";
-import { Context } from "../../CommonComponents/context/AppContext";
+
+
 
 const SatisfiedCustomer = () => {
   let cards = [
@@ -43,7 +44,9 @@ const SatisfiedCustomer = () => {
     },
   ];
 
-  const { goToSlide, setGoToSlide } = useContext(Context);
+
+
+  
   return (
     <div className="satisfied-section">
       <div className="satisfied-container">
@@ -61,33 +64,7 @@ const SatisfiedCustomer = () => {
           <div className="carousel-header">
             <span>Jane John, </span>E-commerce Manager
           </div>
-          <Carausel
-            cards={cards}
-            height="308px"
-            width="100%"
-            margin="0 auto"
-            offset={200}
-            showArrows={false}
-          />
-          <div className="text-container">
-            <div className="carousel-text">
-              {cards.map((item, index) => (
-                <div className="text-content" key={index}>
-                  {item.key == goToSlide ? <div>{item.text}</div> : ""}
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="dot-container">
-            <div className="dots-content">
-              {
-                cards.map((item,index) => (
-                  <div className={goToSlide == index ? "dot active-dot" : "dot"}  onClick={() => setGoToSlide(index)}></div>
-                )
-                )
-              }
-            </div>
-          </div>
+          <Carausel cards={cards} height="308px" width="100%" margin="0 auto" />
         </div>
       </div>
     </div>

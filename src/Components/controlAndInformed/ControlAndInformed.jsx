@@ -1,11 +1,11 @@
 import React from "react";
 import "./ControlAndInformed.scss";
-import ReactPlayer from 'react-player'
+import ReactPlayer from "react-player";
 import icon from "../../assets/images/icon5.svg";
-import video from "../../assets/videos/Booking Flow.mov"
-import close from "../../assets/images/close.svg"
-import minimise from "../../assets/images/minimize.svg"
-import maximise from "../../assets/images/maximize.svg"
+import video from "../../assets/videos/Booking Flow.mov";
+import close from "../../assets/images/close.svg";
+import minimise from "../../assets/images/minimize.svg";
+import maximise from "../../assets/images/maximize.svg";
 
 const ControlAndInformed = () => {
   return (
@@ -32,13 +32,20 @@ const ControlAndInformed = () => {
           </div>
           <div className="video-container">
             <div className="dot-container">
-                <img src={close} alt="close" />
-                <img src={minimise} alt="minimise" />
-                <img src={maximise} alt="maximise" />
-
+              <img src={close} alt="close" />
+              <img src={minimise} alt="minimise" />
+              <img src={maximise} alt="maximise" />
             </div>
-            <div className='player-wrapper'>
-            <ReactPlayer url={video} loop={true} width={"100%"} height={"100%"}  playing={true} controls={false} className="video" />
+            <div className="player-wrapper">
+              <ReactPlayer
+                url={video}
+                loop={true}
+                width={"100%"}
+                height={"100%"}
+                playing={true}
+                controls={false}
+                className="video"
+              />
             </div>
           </div>
 

@@ -1,7 +1,5 @@
 @import "../../assets/scss/variable.scss";
 .customized-section {
-  // margin-bottom: 6rem;
-  // padding-bottom: 86px;
   .customized-container {
     width: 85%;
     margin: 0 auto;
@@ -19,14 +17,13 @@
       justify-content: space-between;
       .item {
         padding-top: 2rem;
-        .img{
-            position: relative;
-            .first-img{}
-            .img-icon{
-                position: absolute;
-                top: -4rem;
-                left: -4rem;
-            }
+        .img {
+          position: relative;
+          .img-icon {
+            position: absolute;
+            top: -4rem;
+            left: -4rem;
+          }
         }
         .sub-heading {
           font-size: 22px;
@@ -59,41 +56,36 @@
           letter-spacing: 0em;
           text-align: center;
           color: #282626;
-          margin: .8rem 0;
-        //   transform: 1s;
+          margin: 0.8rem 0;
+
           img {
             position: relative;
             right: -2rem;
-            // padding-left: 2rem;
+
             transition: right 0.5s;
           }
           &:hover {
             border: 0;
             background-color: $black1;
             color: $white;
-            transition: ease all .5s;
-            
+            transition: ease all 0.5s;
+
             img {
-              //   // filter: invert(100%) url('assets/your-SVG.svg#id-of-your-filter');
-              // filter: invert(0) sepia(0) saturate(1) hue-rotate(360deg)
-              //   brightness(1.2);
               right: -0.5rem;
             }
           }
         }
-        .explore-btn-sec{
-
+        .explore-btn-sec {
           img {
             position: relative;
             right: -0.3rem;
             transition: right 0.5s;
           }
-          &:hover {            
+          &:hover {
             img {
               right: -0.3rem;
             }
           }
-
         }
       }
     }
