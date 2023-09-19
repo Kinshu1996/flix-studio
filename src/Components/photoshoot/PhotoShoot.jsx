@@ -43,38 +43,38 @@ const PhotoShoot = () => {
           
         <div className="row">
         <div className="col">
-          <img src={rectangle1} alt="img_1"  />
+          <img src={rectangle1} alt="img_1" loading="lazy" />
         </div>
         <div className="col">
-          <img src={gif1} alt="gif_1"  />
+          <img src={gif1} alt="gif_1" loading="lazy" />
         </div>
         <div className="col" style={{position: "relative"}}>
-            <img src={starIcon} alt="star-icon"  style={{position: "absolute", right: "-3rem", top: "-3rem", zIndex: "0" }} />
-          <img src={img1} alt="img1"  style={{position: "relative", zIndex: "1"}} />
+            <img src={starIcon} alt="star-icon" loading="lazy" style={{position: "absolute", right: "-3rem", top: "-3rem", zIndex: "0" }} />
+          <img src={img1} alt="img1" loading="lazy" style={{position: "relative", zIndex: "1"}} />
         </div>
         </div>
         <div className="row">
           <div className="col">
-            <img src={img2} alt="img2"  />
+            <img src={img2} alt="img2" loading="lazy" />
           </div>
           <div className="col">
             <div className="row">
             <div className="col">
-            <img src={img3} alt="img3"  />
+            <img src={img3} alt="img3" loading="lazy" />
             </div>
             <div className="col">
-            <img src={img4} alt="img4"  />
+            <img src={img4} alt="img4" loading="lazy" />
             </div>
             </div>
             <div className="row">
               <div className="col">
-              <img src={img5} alt="img5"  />
+              <img src={img5} alt="img5" loading="lazy" />
               </div>
               <div className="col">
-              <img src={img6} alt="img6"  />
+              <img src={img6} alt="img6" loading="lazy" />
               </div>
               <div className="col">
-              <img src={rectangle2} alt="rectangle2"  />
+              <img src={rectangle2} alt="rectangle2" loading="lazy" />
               </div>
             </div>
           </div>

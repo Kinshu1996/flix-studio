@@ -9,21 +9,21 @@ const ChatWithSales = () => {
     <div className='chat-section'>
         <div className='chat-container'>
             <div className='left-side'>
-                <img src={callUsImg} alt='callUsImg'  />
+                <img src={callUsImg} alt='callUsImg' loading="lazy" />
             </div>
             <div className='right-side'>
                 <div className='heading'>Still have query's </div>
                 <div className='tik-container'>
                     <div className='tik-content' >
-                        <img src={tikIcon} alt='tikIcon' />
+                        <img src={tikIcon} alt='tikIcon' loading="lazy" />
                         <div className='text'>have a large project in mind?</div>
                     </div>
                     <div className='tik-content' >
-                        <img src={tikIcon} alt='tikIcon' />
+                        <img src={tikIcon} alt='tikIcon' loading="lazy" />
                         <div className='text'>need guidance building a custom shoot?</div>
                     </div>
                     <div className='tik-content' >
-                        <img src={tikIcon} alt='tikIcon' />
+                        <img src={tikIcon} alt='tikIcon' loading="lazy" />
                         <div className='text'>looking for brand specific model</div>
                     </div>
                 </div>

@@ -14,7 +14,7 @@ export const CustomFooter = () => {
         <div className="footer-container">
           <div className="footer-top">
             <div className="logo">
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" loading="lazy" />
             </div>
 
             <div className="table">
@@ -130,7 +130,7 @@ export const CustomFooter = () => {
               <div className="right">
                 <div className="text">@Flixstudios</div>
                 <div className="icon">
-                  <img src={icon} alt="icon" />
+                  <img src={icon} alt="icon" loading="lazy" />
                 </div>
               </div>
             </div>

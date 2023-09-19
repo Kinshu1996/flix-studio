@@ -14,20 +14,20 @@ const ComboOffer = () => {
     <div className='combo-offer-section'>
       <div className='combo-offer-container'>
        <div className='back-content'>
-        <img src={rect} alt='rect' />
+        <img src={rect} alt='rect' loading="lazy" />
        </div>
        <div className='pic-container'>
         <div className='pic-content'>
           <div className='left-pic'>
-            <img src={combo1} alt='combo1' />
+            <img src={combo1} alt='combo1' loading="lazy" />
           </div>
           <div className='right-pic'>
             <div className='top'>
-              <img src={combo2} alt='combo2' />
-              <img className='combo-offer' src={comboIcon} alt='comboIcon' />
+              <img src={combo2} alt='combo2' loading="lazy" />
+              <img className='combo-offer' src={comboIcon} alt='comboIcon' loading="lazy" />
             </div>
             <div className='bottom'>
-              <img src={combo3} alt='combo3' />
+              <img src={combo3} alt='combo3' loading="lazy" />
             </div>
           </div>
         </div>
@@ -52,31 +52,31 @@ const ComboOffer = () => {
             
           <Col span={12}>
             <div className='tik-container'>
-            <img src={tikIcon} alt='tik' />
+            <img src={tikIcon} alt='tik' loading="lazy" />
             <div className='tik-text'>4 Catalog Images</div>
           </div>
             </Col>
             <Col span={12}>
             <div className='tik-container'>
-            <img src={tikIcon} alt='tik' />
+            <img src={tikIcon} alt='tik' loading="lazy" />
             <div className='tik-text'>1 product 360 video </div>
           </div>
             </Col>
             <Col span={12}>
             <div className='tik-container'>
-            <img src={tikIcon} alt='tik' />
+            <img src={tikIcon} alt='tik' loading="lazy" />
             <div className='tik-text'>1 Ghost Image (Front) </div>
           </div>
             </Col>
             <Col span={12}>
             <div className='tik-container'>
-            <img src={tikIcon} alt='tik' />
+            <img src={tikIcon} alt='tik' loading="lazy" />
             <div className='tik-text'>Color ways (Solid colour change)</div>
           </div>
             </Col>
             <Col span={24}>
             <div className='tik-container'>
-            <img src={tikIcon} alt='tik' />
+            <img src={tikIcon} alt='tik' loading="lazy" />
             <div className='tik-text'>3 Lifestyle shot (Background of your choice)</div>
           </div>
             </Col>

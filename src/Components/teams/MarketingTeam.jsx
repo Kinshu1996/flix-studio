@@ -76,14 +76,14 @@ const MarketingTeam = () => {
             </div>
             <div className="knowBtn">
             <div>Know more</div>
-            <img src={arrow} alt="arrow-icon" />
+            <img src={arrow} alt="arrow-icon" loading="lazy" />
            </div>
           </div>
         </div>
       </div>
       <div className="right-side text-focus-in">
         {
-          activeItem === "1" ? <img src={mt1} alt="mt1" /> : activeItem === "2" ? <img src={mt2} alt="mt2" /> : activeItem === "3" ? <img src={mt3} alt="mt3" /> : <img src={mt4} alt="mt4" />
+          activeItem === "1" ? <img src={mt1} alt="mt1" loading="lazy" /> : activeItem === "2" ? <img src={mt2} alt="mt2" loading="lazy" /> : activeItem === "3" ? <img src={mt3} alt="mt3" loading="lazy" /> : <img src={mt4} alt="mt4" loading="lazy" />
         }
       </div>
     </div>

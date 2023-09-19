@@ -23,18 +23,18 @@ const ControlAndInformed = () => {
         </div>
         <div className="content">
           <div className="tik-container tik-container-1">
-            <img className="tic-icon" src={icon} alt="tic" />
+            <img className="tic-icon" src={icon} alt="tic" loading="lazy" />
             <div className="tik-text">Job Tracking</div>
           </div>
           <div className="tik-container tik-container-3">
-            <img className="tic-icon" src={icon} alt="tic" />
+            <img className="tic-icon" src={icon} alt="tic" loading="lazy" />
             <div className="tik-text">Model Selection</div>
           </div>
           <div className="video-container">
             <div className="dot-container">
-              <img src={close} alt="close" />
-              <img src={minimise} alt="minimise" />
-              <img src={maximise} alt="maximise" />
+              <img src={close} alt="close" loading="lazy" />
+              <img src={minimise} alt="minimise" loading="lazy" />
+              <img src={maximise} alt="maximise" loading="lazy" />
             </div>
             <div className="player-wrapper">
               <ReactPlayer
@@ -45,18 +45,18 @@ const ControlAndInformed = () => {
                 playing={true}
                 controls={false}
                 className="video"
-                loading="lazy"
+                
               />
             </div>
           </div>
 
           <div className="tik-container tik-container-2">
-            <img className="tic-icon" src={icon} alt="tic" />
+            <img className="tic-icon" src={icon} alt="tic" loading="lazy" />
             <div className="tik-text">DAM</div>
           </div>
 
           <div className="tik-container tik-container-4">
-            <img className="tic-icon" src={icon} alt="tic" />
+            <img className="tic-icon" src={icon} alt="tic" loading="lazy" />
             <div className="tik-text">On Image Feedback</div>
           </div>
         </div>

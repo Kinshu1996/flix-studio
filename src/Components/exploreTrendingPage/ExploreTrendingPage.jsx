@@ -23,7 +23,7 @@ const ExploreTrendingPage = () => {
       <div className="explore-section">
         <div className="explore-container">
           <div className="top-section">
-            <img className="rect1 " src={rect1} alt="rect1" />
+            <img className="rect1 " src={rect1} alt="rect1" loading="lazy"/>
             <div className="heading">Explore trending packages</div>
             <div className="trending-btn">
               <div
@@ -52,8 +52,8 @@ const ExploreTrendingPage = () => {
               <span>124 People </span>
               have booked one or more packages in last 24 hours
             </div>
-            <img className="rect2" src={rect2} alt="rect2" />
-            <img className="rect3" src={rect3} alt="rect3" />
+            <img className="rect2" src={rect2} alt="rect2" loading="lazy" />
+            <img className="rect3" src={rect3} alt="rect3" loading="lazy" />
           </div>
           <div className="bottom-section">
             {active === "2" ? (

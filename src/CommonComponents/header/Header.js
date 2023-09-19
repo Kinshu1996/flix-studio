@@ -110,12 +110,12 @@ const AllProducts = () => {
       {openDropdown ? (
         <Space className="space" style={{color: "#DE6B32"}}>
           All Products
-          <img src={arrow2} alt="arrow-icon" />
+          <img src={arrow2} alt="arrow-icon" loading="lazy" />
         </Space>
       ) : (
         <Space className="space">
           All Products
-          <img src={arrow1} alt="arrow-icon" />
+          <img src={arrow1} alt="arrow-icon" loading="lazy" />
         </Space>
       )}
      
@@ -243,12 +243,12 @@ const Services = () => {
       {openDropdown ? (
         <Space className="space" style={{color: "#DE6B32"}}>
           Services
-          <img src={arrow2} alt="arrow-icon" />
+          <img src={arrow2} alt="arrow-icon" loading="lazy" />
         </Space>
       ) : (
         <Space className="space">
           Services
-          <img src={arrow1} alt="arrow-icon" />
+          <img src={arrow1} alt="arrow-icon"  loading="lazy"/>
         </Space>
       )}
     </Dropdown>
@@ -496,12 +496,12 @@ const Teams = () => {
       {openDropdown ? (
         <Space className="space" style={{color: "#DE6B32"}}>
           Teams
-          <img src={arrow2} alt="arrow-icon" />
+          <img src={arrow2} alt="arrow-icon" loading="lazy" />
         </Space>
       ) : (
         <Space className="space">
           Teams
-          <img src={arrow1} alt="arrow-icon" />
+          <img src={arrow1} alt="arrow-icon" loading="lazy" />
         </Space>
       )}
     </Dropdown>
@@ -523,12 +523,12 @@ const Company = () => {
        {openDropdown ? (
         <Space className="space" style={{color: "#DE6B32"}}>
           Company
-          <img src={arrow2} alt="arrow-icon" />
+          <img src={arrow2} alt="arrow-icon" loading="lazy" />
         </Space>
       ) : (
         <Space className="space">
           Company
-          <img src={arrow1} alt="arrow-icon" />
+          <img src={arrow1} alt="arrow-icon" loading="lazy" />
         </Space>
       )}
     </Dropdown>
